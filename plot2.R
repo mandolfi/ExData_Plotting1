@@ -16,6 +16,6 @@ v <- as.numeric(c);
 strtstamp <- paste(df$Date, df$Time);
 t <- strptime(strtstamp, "%d/%m/%Y %H:%M:%S");
 
-plot(t, v, type="l")
+plot(t, v, type="l", ylab="Global Active Power (kilowatts)", xlab="")
 dev.copy(png, "plot2.png");
 dev.off();
